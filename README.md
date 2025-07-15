@@ -68,6 +68,7 @@ Build routes for a car company:
 Before we begin coding, complete the initial setup:
 
 1. **Fork and Clone**
+
    - Go to the GitHub repository link.
    - Fork the repository to your GitHub account.
    - Clone the forked repository to your local machine.
@@ -92,14 +93,15 @@ Build the following routes:
 
 ### App Routes:
 
-- `/`  
+- `/`
+
   - Returns: `"Welcome to Flatiron Cars"`
 
-- `/<model>`  
-  - Takes `model` variable from the URL  
-  - Uses the `model` variable to check against an `existing_models` array  
+- `/<model>`
+  - Takes `model` variable from the URL
+  - Uses the `model` variable to check against an `existing_models` array
     - If model exists:  
-      `"Flatiron {model} is in our fleet!"`  
+      `"Flatiron {model} is in our fleet!"`
     - If model doesn't exist:  
       `"No models called {model} exists in our catalog"`
 
@@ -153,3 +155,24 @@ Once all tests are passing and code is pushed to the `main` branch:
 - Application passes all test suites
 - `/` route is created and returns correctly
 - `/<model>` route is created and returns correctly
+
+## Completed Functionality
+
+- `/` route returns: "Welcome to Flatiron Cars"
+- `/<model>` route returns:
+  - "Flatiron <model> is in our fleet!" if the model exists
+  - "No models called <model> exists in our catalog" if not
+
+All tests pass successfully.
+
+### Root Route
+
+![Example Root Route Output](images/root-route.png)
+
+### Working Model Route
+
+![Example Root Route Output](images/Beetle-route.png)
+
+### Not In Models Route
+
+![Example Root Route Output](images/fake-car.png)
